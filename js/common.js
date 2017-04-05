@@ -69,4 +69,104 @@ $(document).ready(function() {
 
 	$(document).on("scroll", onScroll);
 
+//// video bg
+	scaleVideoContainer();
+
+	initBannerVideoSize('.video-container .poster img');
+	initBannerVideoSize('.video-container .filter');
+	initBannerVideoSize('.video-container video');
+
+	window.onresize =  function() {
+		scaleVideoContainer();
+		scaleBannerVideoSize('.video-container .poster img');
+		scaleBannerVideoSize('.video-container .filter');
+		scaleBannerVideoSize('.video-container video');
+	};
+
+	function scaleVideoContainer() {
+		var height = $(window).height() + 5;
+		var unitHeight = parseInt(height) + 'px';
+		$('.homepage-hero-module').css('height',unitHeight);
+	}
+	function initBannerVideoSize(element){
+
+		$(element).each(function(){
+			$(this).data('height', $(this).height());
+			$(this).data('width', $(this).width());
+		});
+
+		scaleBannerVideoSize(element);
+	}
+	function scaleBannerVideoSize(element){
+
+		var windowWidth = $(window).width(),
+		windowHeight = $(window).height() + 5,
+		videoWidth,
+		videoHeight;
+
+		$(element).each(function(){
+			var videoAspectRatio = $(this).data('height')/$(this).data('width');
+
+			$(this).width(windowWidth);
+
+			if(windowWidth < 1000){
+				videoHeight = windowHeight;
+				videoWidth = videoHeight / videoAspectRatio;
+				$(this).css({'margin-top' : 0, 'margin-left' : -(videoWidth - windowWidth) / 2 + 'px'});
+
+				$(this).width(videoWidth).height(videoHeight);
+			}
+
+			$('.homepage-hero-module .video-container video').addClass('fadeIn animated');
+
+		});
+	}
+//// player
+	var controls = {
+		video: $("video.u-bg-video"),
+		playpause: $(".u-bg-video-pp"),
+		togglePlayback: function() {
+			(video.paused) ?(video.play(), editPaysePlay(true)) :(video.pause(), editPaysePlay(false));
+		}          
+	};
+
+	var video = controls.video[0];
+	// нажатие на кнопку пуск/пауза
+	controls.playpause.click(function(){
+		controls.togglePlayback();
+	});
+
+	// video.addEventListener("canplay", function() {
+	// 	video.play();
+	// 	editPaysePlay(true);
+	// }, false);
+
+	var editPaysePlay = function(what){
+		controls.playpause.removeClass('fa-' + ((what) ? 'play' : 'pause') + '-circle-o');
+		controls.playpause.addClass('fa-' + ((what) ? 'pause' : 'play') + '-circle-o');
+	}
+
+// image auto height/width
+	img_auto_wdth_height();
+	
+	window.onresize = function(event) {img_auto_wdth_height();};
+	
+	$(document).on("resize", img_auto_wdth_height);
+	function img_auto_wdth_height(){
+		// document.getElementsByClassName('u-a-wh').offsetHeight;
+		$('.u-img-awh').each(function(){
+			var w = Math.ceil($(this).parents('.u-img-awh-p').width());
+			var h = Math.ceil($(this).parents('.u-img-awh-p').height());
+			$(this).attr({'src':'http://placehold.it/'+ w +'x' + h});
+		});
+	}
+
+//// slider
+$('.slider').unslider({
+	animation: 'vertical',
+	autoplay: true,
+	infinite: true,
+	arrows: false
+});
+
 });
