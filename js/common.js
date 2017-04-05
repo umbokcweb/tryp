@@ -157,7 +157,7 @@ $(document).ready(function() {
 		$('.u-img-awh').each(function(){
 			var w = Math.ceil($(this).parents('.u-img-awh-p').width());
 			var h = Math.ceil($(this).parents('.u-img-awh-p').height());
-			$(this).attr({'src':'http://placehold.it/'+ w +'x' + h});
+			$(this).attr({'src':'https://placehold.it/'+ w +'x' + h});
 		});
 	}
 
