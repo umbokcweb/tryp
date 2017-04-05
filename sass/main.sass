@@ -1,0 +1,725 @@
+@import "bourbon/bourbon"
+=box-shadow($s...)
+	-webkit-box-shadow: $s
+	-moz-box-shadow: $s
+	box-shadow: $s
+
+=border-radius($radius...)
+  -webkit-border-radius: $radius
+  -moz-border-radius:    $radius
+  -ms-border-radius:     $radius
+  border-radius:         $radius
+
+=transform($args...)
+  -webkit-transform: $args
+  -moz-transform:    $args
+  -ms-transform:     $args
+  transform:         $args
+
+$ugreen: #1abc9c;
+$ugrey: #4c4c4c;
+
+html
+	height: 100%
+body
+	font-family: "UbuntuRegular", sans-serif
+	font-weight: normal
+	font-size: 14px
+	min-width: 320px
+	position: relative
+	line-height: 1.42857
+	-webkit-font-smoothing: antialised
+	height: 100%
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: red
+body input:required:valid,
+body textarea:required:valid
+	color: green
+
+.hidden
+	display: none
+
+section .title
+	margin-bottom: 80px
+	.u-title-icon
+		font-size: 63px
+		padding: 50px 0 30px
+	p
+		font-family: "UbuntuBold"
+		font-size: 10pt
+		text-transform: uppercase
+		color: #a5a5a5
+		letter-spacing: 0.245em
+	h2
+		font-family: "UbuntuLight"
+		font-size: 61px
+		color: $ugrey
+		span
+			color: $ugreen
+
+.u-icon
+	font-size: 69px
+
+///////////////////////
+header
+	color: #fff
+	height: 100%
+	max-height: 760px
+	min-height: 650px
+	.content
+		position: absolute
+		z-index: 200
+		width: 100%
+	.desc
+		padding-top: 60px
+		font-family: "UbuntuBold"
+		font-size: 10pt
+		text-transform: uppercase
+		letter-spacing: 0.245em
+	h1 
+		font-family: "UbuntuRegular"
+		font-size: 40pt
+		margin: 20px 0
+	.desc2
+		font-family: "UbuntuLight"
+		font-size: 18pt
+	
+	.u-play
+		margin: 70px 0
+		cursor: pointer
+		font-size: 90pt
+
+	form
+		input
+			margin: 0
+			width: 220px
+			height: 50px
+			background-color: #FFF
+			border: 1px solid #e3e3e3
+			font-family: "UbuntuLight"
+			font-size: 18px
+			padding-left: 35px
+			outline: none
+			color: #292929
+			&:first-child
+				border-right-width: 2px	
+		.u-sbmt
+			background-color: $ugreen
+			border: none
+			padding: 0
+			color: #fff
+			&:hover
+				background-color: #5ad9c0
+	
+	.help
+		font-family: "UbuntuLight"
+		color: #fff
+		font-size: 16px
+		padding: 45px 0 0
+		a 
+			color: #19bc9b
+
+///////////////////////
+nav.head
+	height: 60px
+	+box-shadow(rgba(0, 0, 0, 0.2) 0 3px 20px 0px)
+	.logo a
+		line-height: 60px
+	ul
+		li 
+			// display: inline-block
+			float: left
+			font-family: "UbuntuRegular"
+			font-size: 15px
+			a 
+			 line-height: 60px
+			 padding: 21px 15px 22px
+			 color: #a69999
+			 &:hover, &:focus, &.active
+			 	text-decoration: none
+			 	color: #656060
+
+	.social
+		float: right
+		a
+			padding: 17px 5px
+			&:hover, &:focus
+				text-decoration: none
+		.fa
+			font-size: 27px
+		.fa-facebook
+			color: #435E93
+		.fa-twitter
+			color: #00A6DB
+		.other
+			padding: 24px 5px
+			float: right
+			.fa 
+				font-size: 12px
+				padding-left: 2px
+				color: #989996
+
+///////////////////////
+section.wwd
+	border-bottom: 1px solid #dddddd
+	.u-wwd-thee
+		padding-bottom: 80px
+		.box 
+			p 
+				width: 90%
+				color: #939598
+				font-size: 16px
+			h3 
+				color: $ugrey
+				font-size: 27px
+		.u-icon.icon-mobile
+			color: #4796b7
+		.u-icon.icon-presentation
+			color: #9f5cd8
+		.u-icon.icon-lightbulb
+			color: #f1438a
+
+///////////////////////
+section.oc
+	.slider
+		background-color: #f4f4f4
+		height: 450px
+	.list
+		+box-shadow(rgba(0, 0, 0, 0.2) 0 0 4px 1px)
+		.vt-1, .vt-2, .vt-4, .vt-5
+			text-transform: uppercase
+			font-family: "UbuntuLight"
+			font-size: 10pt
+			color: #000000
+			letter-spacing: 0.315em
+		.vt-2
+			font-size: 18pt
+			letter-spacing: 0.112em
+		.vt-3
+			font-size: 12pt
+			color: $ugrey
+		.vt-4
+			font-family: "UbuntuRegular"
+			font-size: 12pt
+			letter-spacing: 0.215em
+		.vt-5
+			color: #dddddd
+		
+		.box
+			width: 98%
+			margin-left: 1%
+			min-height: 90px
+			padding: 20px
+			border-bottom: 1px solid #dcdddf
+	.end
+		p 
+			color: #939598
+			font-size: 16px
+			line-height: 28px
+
+///////////////////////
+section.swp
+	background-color: #f7f7f7
+	.swp_wrap
+		.swp_item
+			display: block
+			float: left
+			width: 360px
+			height: 250px
+			background-color: #FFF
+			margin: 8px
+			+box-shadow(rgba(0, 0, 0, 0.2) 0 0 4px 1px)
+			padding: 35px
+			h3,h4
+				font-size: 27px
+				padding-bottom: 35px
+				color: $ugrey
+			.u-icon.icon-mobile
+				color: #a56bd3
+			.u-icon.icon-tools
+				color: #f1438a
+			.u-icon.icon-lightbulb
+				color: #aed066
+			.u-icon.icon-video
+				color: #ac5c5c
+
+			h4
+				font-family: "UbuntuBold"
+				padding-bottom: 10px
+
+			ul 
+				li 
+					font-family: "UbuntuLight"
+					font-size: 16px
+					width: 100%
+					padding: 7px 15px
+					margin-bottom: 7px
+					+box-shadow(rgba(0, 0, 0, 0.2) 2px 3px 7px 0px)
+					cursor: default
+					&:hover
+						background-color: #f2f2f2
+
+///////////////////////
+section.wof
+	.wof_buttons
+		a.btn
+			+border-radius(3px 3px 0 0)
+			+box-shadow(rgba(0, 0, 0, 0.2) 1px 0px 8px 1px)
+			font-size: 16px
+			color: #777777
+			padding: 17px 37px
+			text-transform: uppercase
+			margin-left: 5px
+			position: relative
+			&.active
+				background-color: $ugreen
+				color: #fff
+				text-decoration: none
+			&:hover
+				top: 1.5px
+				text-decoration: none
+			&:focus
+				text-decoration: none
+	
+	.content
+		margin: 60px 0
+		.right
+			.row-c-v
+				align-items: flex-start;
+			h3
+				font-family: "UbuntuLight"
+				font-size: 27px
+				color: $ugrey
+				width: 80%
+				padding-bottom: 20px
+			p 
+				font-family: "UbuntuLight"
+				font-size: 16px
+				color: #939598
+				width: 99%
+
+///////////////////////
+section.ow
+	max-width: 1900px
+	margin: 0 auto
+	display: grid
+	.head
+		background-color: #f8f9fb
+		margin-bottom: 0
+		padding-bottom: 30px
+		.ow_buttons
+			a.btn
+				padding: 12px 20px
+				background-color: $ugreen
+				color: #fff
+				font-size: 18px
+				margin-left: 2px
+				position: relative
+				&.active
+					background-color: #000
+				&:hover
+					top: 1.5px
+					text-decoration: none
+				&:focus
+					text-decoration: none
+	.content
+		.ow-box
+			height: 250px
+			display: inline-block
+			transition: transform 0.8s ease
+			padding: 0
+			margin: 0
+			position: relative
+			img
+				position: absolute
+				top: 0
+				left: 0
+				z-index: -1
+			.desc
+				opacity: 0
+				position: absolute
+				height: 60px
+				bottom: -60px
+				width: 100%
+				background-color: #252830
+				align-items: flex-start
+				padding: 0 15px
+				transition: opacity 0.8s ease
+				p
+					font-size: 17px
+					color: #fff
+					span 
+						font-family: "ubuntubold"
+			.tech
+				ul 
+					padding: 10px
+					li
+						opacity: 0
+						transition: opacity 0.8s ease
+						padding: 4px 9px
+						font-size: 13px
+						color: #5ebd85
+						display: inline-block
+						background-color: #f2ede8
+						+border-radius(3px)
+
+			&:hover
+				+transform(translatey(-60px))
+				text-decoration: none
+			&:focus
+				text-decoration: none
+			&:hover .desc, &:hover .tech li
+				opacity: 1
+
+
+///////////////////////
+section.ot
+	clear: both;
+	.pers
+		img
+			padding-top: 10px
+		.name
+			padding-top: 20px
+			font-size: 27px
+			color: $ugrey
+		.spec
+			padding-top: 5px
+			font-size: 19px
+			color: #939598
+		.social
+			padding-top: 10px
+			padding-bottom: 15px
+			a 
+				font-size: 24px
+				padding: 0 5px
+				&.fa-facebook
+					color: #627aad
+				&.fa-twitter
+					color: #33bdf1
+				&.fa-linkedin
+					color: #3395c5
+				&:hover
+					text-decoration: none
+				&:focus
+					text-decoration: none
+		transition: transform 0.4s cubic-bezier(0.4, 0, 1, 1)
+		&:hover
+			+box-shadow(rgba(0, 0, 0, 0.2) 2px 0px 20px 4px)
+			+transform(scale(1.02))
+
+///////////////////////
+section.nf
+	background-color: #f9f9f9
+	padding-top: 80px
+	padding-bottom: 40px
+	img
+		max-width: 500px;
+	.right
+		padding-left: 80px
+	.title2
+		h2
+			font-family: "UbuntuBold"
+			font-size: 33px
+			color: $ugrey
+			text-transform: uppercase
+		h3
+			font-size: 33px
+			color: #939598
+			margin-bottom: 10px
+			span 
+				color: $ugreen
+		p
+			font-family: "UbuntuLight"
+			font-size: 15px
+			color: #c1b0b3
+	
+	.list
+		padding-top: 55px
+		ul
+			float: left
+			padding-right: 100px
+			li 
+				font-size: 16px
+				color: #8d7a7a
+				line-height: 32px
+				display: block
+				&::before
+					color: $ugrey
+					padding-right: 10px
+
+	.nf_buttons
+		padding-top: 80px
+		clear: both
+		.active
+			padding: 20px 40px
+			background-color: #000
+			color: #fff
+		.btn:hover, .btn:focus
+			text-decoration: none
+		.btn:hover
+			background-color: #383838
+		.d_active
+			color: #afb0b3
+			padding-left: 20px
+
+///////////////////////
+section.statistics
+	background-color: #141519
+	padding-top: 80px
+	padding-bottom: 80px
+	color: #fff
+	.ttl
+		font-size: 27px
+	.u-icon
+		font-size: 47px
+		margin-bottom: 5px
+	.price
+		font-family: "UbuntuLight"
+		font-size: 45px
+		line-height: 50px
+	.desc
+		line-height: 50px
+		font-size: 18px
+
+///////////////////////
+section.subscribe
+	background-color: #f1f1ef
+	padding-top: 75px
+	padding-bottom: 90px
+	h3
+		font-family: "UbuntuLight"
+		font-size: 46px
+		line-height: 50px
+
+	form 
+		padding: 20px 0 40px	
+		input
+			height: 45px
+			background-color: #FFF
+			border: none
+			outline: none
+			width: 85%
+			font-family: "UbuntuLight"
+			font-size: 14px
+			padding-left: 20px
+			color: #292929
+		a 
+			width: 15%
+			line-height: 45px	
+			font-size: 28px
+			color: $ugreen
+			background-color: #fff
+			transition: background-color 0.2s ease-in-out 
+			&:hover
+				background-color: #ececec
+			&:hover, &:focus
+				text-decoration: none	
+	
+	p 
+		font-family: "UbuntuLight"
+		font-size: 17px
+		color: #939598
+
+///////////////////////
+section.sybd
+	color: $ugrey
+	line-height: 57px
+	.box
+		width: 320px
+		+box-shadow(rgba(0, 0, 0, 0.2) 2px 0px 20px 4px)
+		// margin: 0 15px
+		h3 
+			font-size: 20px
+			text-transform: uppercase
+		.price
+			font-size: 29px
+			line-height: 110.5px
+			background-color: #f1f1ef
+			border: 7px double #dedede
+			+border-radius(50%)
+			height: 125px
+			width: 125px
+		.month
+			color: #939598
+			font-size: 16px
+		ul 
+			li
+				font-size: 16px
+				line-height: 30px
+				span
+					font-family: "UbuntuBold"
+		.sybd_buttons
+			a.btn
+				font-family: "UbuntuLight"
+				padding: 16px 36px
+				background-color: $ugreen
+				color: #fff
+				font-size: 18px
+				margin-left: 2px
+				transition: all .1s ease-in-out 
+				&:hover
+					padding: 18px 40px
+					font-size: 19px	
+					text-decoration: none
+				&:focus
+					text-decoration: none
+		.trial
+			line-height: 27px
+			font-size: 16px
+			color: #928b8b
+		&.active
+			color: #fff
+			background-color: $ugreen
+			+box-shadow(none)
+			.price
+				background-color: $ugreen
+				border-color: #d6dcdb
+			.month
+				color: #fff
+			.sybd_buttons
+				a.btn
+					background-color: #fff
+					color: $ugreen
+			.trial
+				color: #f8f9fb
+	.help
+		a 
+			color: $ugreen
+
+///////////////////////
+section.sh
+	background-color: #f8f9fb
+	form
+		input
+			height: 50px
+			&[name="name"], &[name="email"]
+				float: left
+				width: 49% !important
+				margin-bottom: 15px
+			&[name="name"]
+				margin-right: 2%
+			&[name="subject"]
+				margin-bottom: 25px
+		input, textarea
+			padding-left: 10px
+			border: 1px solid #cccccc
+			outline: 0
+			width: 100%
+		textarea
+			padding-top: 10px
+			resize: none
+			height: 200px
+			margin-bottom: 50px
+
+		.u-sbmt
+			font-family: "UbuntuLight"
+			background-color: $ugreen
+			color: #fff
+			font-size: 16px
+			width: 180px
+			&:hover
+				background-color: #40d2b6
+				text-decoration: none
+			&:focus
+				text-decoration: none
+	.dop
+		padding: 30px 0
+		background-color: #ededed
+		.u-icon
+			font-size: 42px
+			line-height: 67px
+		h3
+			font-family: "UbuntuBold"
+			font-size: 18px
+			text-transform: uppercase
+			padding-top: 15px
+			padding-bottom: 15px
+		a, p
+			font-family: "UbuntuLight"
+			font-size: 18px
+		a 
+			color: $ugreen
+		p 
+			color: $ugrey
+
+///////////////////////
+footer
+	background-color: #252830
+	color: #fff
+	padding: 30px 0
+	.row
+		align-items: center;
+		flex-direction: row;
+	.copy
+		font-size: 16px
+	.social
+		font-size: 27px
+		float: right
+		a
+			padding-right: 10px
+			&.fa-facebook
+				color: #374f83
+			&.fa-twitter
+				color: #0792c7
+			&.fa-linkedin
+				color: #076a9b
+			&.fa-google-plus
+				color: #b84437
+			&.fa-instagram
+				color: #486e8d
+			&:hover, &:focus
+				text-decoration: none
+///////////////////////
+.headhesive
+	padding-top: 0px
+	margin-top: 0px
+	position: fixed
+	width: 100%
+	background: white
+	transform: translateY(-100%)
+	transition: 0.5s
+	z-index: 1000
+	display: none
+.headhesive--stick
+	display: block
+	transform: translateY(0)
+
+///////////////////////
+.homepage-hero-module
+	border-right: none
+	border-left: none
+	position: relative
+	background-color: #7a7a7a
+	.no-video .video-container video,
+	.touch .video-container video
+		display: none
+
+	.no-video .video-container .poster,
+	.touch .video-container .poster
+		display: block !important
+
+	.video-container
+		position: relative
+		bottom: 0%	
+		left: 0%
+		height: 100%
+		width: 100%
+		overflow: hidden
+		background: #000
+		.poster img
+			width: 100%
+			bottom: 0
+			position: absolute
+		.filter
+			z-index: 100
+			position: absolute
+			background: rgba(0, 0, 0, 0.4)
+			width: 100%
+		video
+			background-color: #7a7a7a
+			position: absolute
+			z-index: 0
+			bottom: 0
+			&.fillWidth
+				width: 100%
