@@ -1,0 +1,609 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    title Umbokc
+    meta(content='', name='description')
+    link(rel='shortcut icon', href='favicon.png')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    link(rel='stylesheet', href='css/u-grid.css')
+    link(rel='stylesheet', href='libs/bootstrap/bootstrap.min.css')
+    link(rel='stylesheet', href='libs/font-awesome/css/font-awesome.min.css')
+    link(rel='stylesheet', href='libs/et-line/css/et-line.css')
+    link(rel='stylesheet', href='css/fonts.css')
+    link(rel='stylesheet', href='css/main.css')
+    link(rel='stylesheet', href='css/media.css')
+  body
+    header.homepage-hero-module
+      .content
+        .a
+          .col-md-12.u-tac
+            p.desc Content Description
+            h1 See the world through our product
+            p.desc2 Get The Most Converstion Rate Easily.
+        div
+          .u-tac
+            .fa.fa-play-circle-o.u-play.u-bg-video-pp
+        .row-c-h
+          form.u-tac.row-c-h.row-c-v-xs(method='post')
+            input(type='text', name='name', placeholder='Your Name')
+            input(type='text', name='email', placeholder='Email Address')
+            input.u-sbmt(type='button', value='Subscribe »')
+        .help.u-tac
+          | * We don’t share your personal 
+          br
+          |  info with anyone Check out our 
+          a.u-not-a(href='#') Policy
+          |  & for more information 
+          a.u-not-a(href='#') Contact Us
+          | .
+      //- a
+        <div class="video-container">
+        <div class="filter"></div>
+        <video loop class="fillWidth u-bg-video">
+        <source src="videos/MP4/Aloha-Mundo.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
+        <source src="videos/WEBM/Aloha-Mundo.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
+        </video>
+        <div class="poster hidden">
+        <img src="videos/Snapshots/Aloha-Mundo.jpg" alt="">
+        </div>
+        </div>
+    nav.head
+      .container
+        .row
+          .col-md-1.col-sm-1
+            .logo
+              a.u-not-a(href='#')
+                img(src='img/logo.png', alt='логотип')
+          .col-md-9.col-sm-9
+            ul
+              li
+                a.u-not-a(href='services') SERVICES
+              li
+                a.u-not-a(href='about') ABOUT
+              li
+                a.u-not-a(href='portfolio') PORTFOLIO
+              li
+                a.u-not-a(href='team') TEAM
+              li
+                a.u-not-a(href='pricing') PRICING
+              li
+                a.u-not-a(href='testimonial') TESTIMONIAL
+          .col-md-2.col-sm-2
+            .social
+              a.fa.fa-facebook.u-not-a(href='#')
+              a.fa.fa-twitter.u-not-a(href='#')
+              a.other.row-c-h.u-not-a(href='#')
+                span.row-c-h
+                  .fa.fa-circle-o
+                  .fa.fa-circle-o
+                  .fa.fa-circle-o
+    section.wwd
+      .container.title
+        .row
+          .u-tac
+            .icon-happy.u-title-icon
+        .row
+          .u-tac
+            p Product Features
+            h2
+              | What we 
+              span do
+      .container.row-c-h.u-wwd-thee
+        .col-md-4.box.u-tac.row-c-v
+          .row-c-v
+            .u-icon.icon-mobile
+            h3.mg-top-big Fully Responsive
+            p.mg-top-md
+              | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+        .col-md-4.box.u-tac.row-c-v
+          .row-c-v
+            .u-icon.icon-presentation
+            h3.mg-top-big Easy to Customize
+            p.mg-top-md
+              | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+        .col-md-4.box.u-tac.row-c-v
+          .row-c-v
+            .u-icon.icon-lightbulb
+            h3.mg-top-big Direct Support
+            p.mg-top-md
+              | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+    section.oc
+      .container.title
+        .row
+          .u-tac
+            .icon-clipboard.u-title-icon
+        .row
+          .u-tac
+            p CONTENT DESCRIPTION
+            h2
+              | Our 
+              span Contents
+      .container.mg-bottom-big
+        .row
+          .col-md-7.col-sm-12
+            .slider.u-img-awh-p
+              ul
+                li.row-c-v
+                  img(src='img/portfolio/1.jpg', alt='asd')
+                li.row-c-v
+                  img(src='img/portfolio/2.jpg', alt='asd')
+                li.row-c-v
+                  img(src='img/portfolio/3.jpg', alt='asd')
+                li.row-c-v
+                  img(src='img/portfolio/4.jpg', alt='asd')
+                li.row-c-v
+                  img(src='img/portfolio/5.jpg', alt='asd')
+          .col-md-5.col-sm-12
+            .list.mg-top-sm
+              .box
+                .vt-1 LOREM MESSAGE
+                .vt-2 FIRST MESSAGE
+              .box
+                .vt-3
+                  | Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque mattis, leo quam aliquet diam, congue laoreet elit metus eget diam. Proin ac metus diam.
+              .box
+                .vt-4 LOREM MESSAGE
+                .vt-5 SECOND MESSAGE
+              .box
+                .vt-4 LOREM MESSAGE
+                .vt-5 THIRD MESSAGE
+            .end.mg-top
+              p
+                | Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque mattis, leo quam
+    //- section#services.swp
+    //-   .container.title
+    //-     .row
+    //-       .u-tac
+    //-         .icon-tools.u-title-icon
+    //-     .row
+    //-       .u-tac
+    //-         p Choose your required service from here
+    //-         h2
+    //-           | Services We  
+    //-           span Provide
+    //-   .container
+    //-     .row.mg-bottom-big
+    //-       .col-md-12
+    //-         .swp_wrap.row
+    //-           .swp_wrap_item.col-md-4
+    //-             .swp_item
+    //-               h4 Web Desing
+    //-               ul
+    //-                 li PSD TO HTML
+    //-                 li Adaptive Web Design
+    //-                 li Responsive Web Design
+    //-           .swp_wrap_item.col-md-4
+    //-             .swp_item.u-tac
+    //-               h3 Web Development
+    //-               .u-icon.icon-mobile
+    //-           .swp_wrap_item.col-md-4
+    //-             .swp_item.u-tac
+    //-               h3 Web Maintenance
+    //-               .u-icon.icon-tools
+    //-           .swp_wrap_item.col-md-4
+    //-             .swp_item
+    //-               h4 Web Desing
+    //-               ul
+    //-                 li PSD TO HTML
+    //-                 li Adaptive Web Design
+    //-                 li Responsive Web Design
+    //-           .swp_wrap_item.col-md-4
+    //-             .swp_item.u-tac
+    //-               h3 Web Development
+    //-               .u-icon.icon-lightbulb
+    //-           .swp_wrap_item.col-md-4
+    //-             .swp_item.u-tac
+    //-               h3 Web Maintenance
+    //-               .u-icon.icon-video
+    //- section#about.wof
+      .container.title
+        .row
+          .u-tac
+            .icon-genius.u-title-icon
+        .row
+          .u-tac
+            p PRODUCT FEATURES
+            h2
+              | What Our  
+              span Features..
+      .container
+        .row
+          .wof_buttons.u-tac.mg-bottom-big
+            a.btn.active.u-not-a(href='#') Introdaction
+            a.btn.u-not-a(href='#') About
+            a.btn.u-not-a(href='#') Features
+        .row
+          .content.row-h
+            .left.col-md-7
+              iframe(src='https://player.vimeo.com/video/208130024', width='555', height='309', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='')
+            .right.row-c-v.col-md-5
+              .row-c-v
+                h3 Take a sneak peek at our videos, for once.
+                p
+                  | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores explicabo beatae omnis modi laboriosam? Totam quae, ab, vero tempora minus ipsam at dolores dolor, obcaecati deleniti provident pariatur ex modi aperiam. Quae, itaque.
+    //- section#portfolio.ow.c-12
+      .container.title.head
+        .row
+          .u-tac
+            .icon-mobile.u-title-icon
+        .row
+          .u-tac
+            p PorTFOLIO
+            h2
+              | Our 
+              span Works
+        .row
+          .ow_buttons.u-tac.mg-top-big.mg-bottom-big
+            a.u-not-a.btn.active(href='#') All
+            a.u-not-a.btn(href='#') Web Design
+            a.u-not-a.btn(href='#') Web Development
+            a.u-not-a.btn(href='#') Uncategorized
+      .container.content
+        .row
+          a.u-not-a.ow-box.col-md-3.col-sm-6.col-xs-12.u-img-ow-bg(href='#')
+            .tech
+              ul
+                li Bootstrap
+                li Js
+            .desc.row-c-v
+              p
+                | Infinite Landing Page 
+                br
+                |  by 
+                span Naveen
+            img(src='img/portfolio/1.jpg', alt='asd')
+          a.u-not-a.ow-box.col-md-3.col-sm-6.col-xs-12.u-img-ow-bg(href='#')
+            .tech
+              ul
+                li Bootstrap
+                li Js
+            .desc.row-c-v
+              p
+                | Infinite Landing Page 
+                br
+                |  by 
+                span Naveen
+            img(src='img/portfolio/2.jpg', alt='asd')
+          a.u-not-a.ow-box.col-md-3.col-sm-6.col-xs-12.u-img-ow-bg(href='#')
+            .tech
+              ul
+                li Bootstrap
+                li Js
+            .desc.row-c-v
+              p
+                | Infinite Landing Page 
+                br
+                |  by 
+                span Naveen
+            img(src='img/portfolio/3.jpg', alt='asd')
+          a.u-not-a.ow-box.col-md-3.col-sm-6.col-xs-12.u-img-ow-bg(href='#')
+            .tech
+              ul
+                li Bootstrap
+                li Js
+            .desc.row-c-v
+              p
+                | Infinite Landing Page 
+                br
+                |  by 
+                span Naveen
+            img(src='img/portfolio/4.jpg', alt='asd')
+          a.u-not-a.ow-box.col-md-3.col-sm-6.col-xs-12.u-img-ow-bg(href='#')
+            .tech
+              ul
+                li Bootstrap
+                li Js
+            .desc.row-c-v
+              p
+                | Infinite Landing Page 
+                br
+                |  by 
+                span Naveen
+            img(src='img/portfolio/5.jpg', alt='asd')
+          a.u-not-a.ow-box.col-md-3.col-sm-6.col-xs-12.u-img-ow-bg(href='#')
+            .tech
+              ul
+                li Bootstrap
+                li Js
+            .desc.row-c-v
+              p
+                | Infinite Landing Page 
+                br
+                |  by 
+                span Naveen
+            img(src='img/portfolio/1.jpg', alt='asd')
+          a.u-not-a.ow-box.col-md-3.col-sm-6.col-xs-12.u-img-ow-bg(href='#')
+            .tech
+              ul
+                li Bootstrap
+                li Js
+            .desc.row-c-v
+              p
+                | Infinite Landing Page 
+                br
+                |  by 
+                span Naveen
+            img(src='img/portfolio/2.jpg', alt='asd')
+          a.u-not-a.ow-box.col-md-3.col-sm-6.col-xs-12.u-img-ow-bg(href='#')
+            .tech
+              ul
+                li Bootstrap
+                li Js
+            .desc.row-c-v
+              p
+                | Infinite Landing Page 
+                br
+                |  by 
+                span Naveen
+            img(src='img/portfolio/5.jpg', alt='asd')
+    //- section#team.ot.mg-bottom-big
+      .container.title
+        .row
+          .u-tac
+            .icon-lifesaver.u-title-icon
+        .row
+          .u-tac
+            p People Who cares
+            h2
+              | Our   
+              span Team
+      .container.row-c-h
+        .col-md-4.pers.u-tac.row-c-v
+          .row-c-v
+            div
+              img(src='img/pers_1.jpg', alt='')
+            h3.name Peter Parker
+            p.spec Website Developer
+            .social
+              a.u-not-a.fa.fa-facebook(href='#')
+              a.u-not-a.fa.fa-twitter(href='#')
+              a.u-not-a.fa.fa-linkedin(href='#')
+        .col-md-4.pers.u-tac.row-c-v
+          .row-c-v
+            div
+              img(src='img/pers_2.jpg', alt='')
+            h3.name Peter Parker
+            p.spec Website Developer
+            .social.row-h
+              a.u-not-a.fa.fa-facebook(href='#')
+              a.u-not-a.fa.fa-twitter(href='#')
+              a.u-not-a.fa.fa-linkedin(href='#')
+        .col-md-4.pers.u-tac.row-c-v
+          .row-c-v
+            div
+              img(src='img/pers_1.jpg', alt='')
+            h3.name Peter Parker
+            p.spec Website Developer
+            .social
+              a.u-not-a.fa.fa-facebook(href='#')
+              a.u-not-a.fa.fa-twitter(href='#')
+              a.u-not-a.fa.fa-linkedin(href='#')
+    //- section.nf
+      .container
+        .row
+          .col-md-5
+            img(src='img/three-blocks.png', alt='block')
+          .col-md-7.right
+            .title2
+              h2 NEW FEATURES
+              h3
+                | Some extra 
+                span Love
+                |  from us
+              p Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor.
+            .list
+              ul
+                li.fa.fa-arrow-circle-o-right Modern Design
+                li.fa.fa-arrow-circle-o-right Fully Responsive
+                li.fa.fa-arrow-circle-o-right Bootstrap Grid
+                li.fa.fa-arrow-circle-o-right Mailchimp Supported
+                li.fa.fa-arrow-circle-o-right Easy To Customize
+              ul
+                li.fa.fa-arrow-circle-o-right Powerful Options
+                li.fa.fa-arrow-circle-o-right Fresh Colors
+                li.fa.fa-arrow-circle-o-right Validated Code
+                li.fa.fa-arrow-circle-o-right Ajax Supported Form
+                li.fa.fa-arrow-circle-o-right Best Typography
+            .nf_buttons
+              a.u-not-a.btn.active(href='#') Get Infinite Now
+              a.u-not-a.btn.d_active(href='#') View More
+    //- section.statistics
+      .container
+        .row
+          .u-tac
+            .ttl 70% People Belive Another Consumer's Opinion Posted Online
+        .row.mg-top-big
+          .col-md-3.u-tac
+            .u-icon.icon-facebook
+            .price 5,000
+            .desc Facebook Like
+          .col-md-3.u-tac
+            .u-icon.icon-twitter
+            .price 3,000
+            .desc Twitter Follower
+          .col-md-3.u-tac
+            .u-icon.icon-happy
+            .price 900
+            .desc Happy Clients
+          .col-md-3.u-tac
+            .u-icon.icon-globe
+            .price 7,000
+            .desc Money Earned
+    //- section.subscribe
+      .container
+        .row
+          .col-md-7
+          .col-md-5
+            h3 Subscribe 
+            form.u-tac.row-c-h(method='post')
+              input(type='text', name='email', placeholder='Email your Address')
+              a.u-not-a.u-sbmt.fa.fa-envelope(href='#')
+            p
+              | Subscribe to our weekly newsletter, We promise you that we wont spam you. Asperiores totam molestias eaque sunt maiores delectus modi ut ab!
+    //- section#pricing.sybd.mg-bottom-big
+      .container.title
+        .row
+          .u-tac
+            .icon-presentation.u-title-icon
+        .row
+          .u-tac
+            p PRODUCT PACKAGES
+            h2
+              | Select your 
+              span best deal !
+      .container.row-c-h
+        .col-md-4.box.u-tac.row-c-v
+          .row-c-v
+            h3.mg-top Basic
+            p.price $59
+            p.month Per Month
+            ul
+              li
+                span Unlimited
+                |  Bandwidth
+              li
+                span Unlimited
+                |  Space
+              li
+                span One
+                |  Time Fees
+              li
+                span 24/7
+                |  Free Support
+              li
+                span Cpanel
+                |  Access
+            .sybd_buttons.mg
+              a.u-not-a.btn(href='#') Get Started
+            p.trial.mg-bottom
+              | 30 Day One User 
+              br
+              | Try Our Product Now
+        .col-md-4.box.active.u-tac.row-c-v
+          .row-c-v
+            h3.mg-top Premium
+            p.price $99
+            p.month Per Month
+            ul
+              li
+                span Unlimited
+                |  Bandwidth
+              li
+                span Unlimited
+                |  Space
+              li
+                span One
+                |  Time Fees
+              li
+                span 24/7
+                |  Free Support
+              li
+                span Cpanel
+                |  Access
+            .sybd_buttons.mg
+              a.u-not-a.btn(href='#') Get Started
+            p.trial.mg-bottom
+              | 30 Day One User 
+              br
+              | Try Our Product Now
+        .col-md-4.box.u-tac.row-c-v
+          .row-c-v
+            h3.mg-top Ultimate
+            p.price $149
+            p.month Per Month
+            ul
+              li
+                span Unlimited
+                |  Bandwidth
+              li
+                span Unlimited
+                |  Space
+              li
+                span One
+                |  Time Fees
+              li
+                span 24/7
+                |  Free Support
+              li
+                span Cpanel
+                |  Access
+            .sybd_buttons.mg
+              a.u-not-a.btn(href='#') Get Started
+            p.trial.mg-bottom
+              | 30 Day One User 
+              br
+              | Try Our Product Now
+      .container
+        .row.u-tac
+          p.help
+            | Want to know more ? 
+            a.u-not-a(href='#') read article,
+            |  check 
+            a.u-not-a(href='#') FAQ
+            | , or 
+            a.u-not-a(href='#') contact us
+            | .
+    //- section#testimonial.sh
+      .container.title
+        .row
+          .u-tac
+            .icon-chat.u-title-icon
+        .row
+          .u-tac
+            p contact us
+            h2
+              | Say 
+              span Hello !
+      .container
+        .row
+          .col-md-offset-2.col-md-8
+            form(method='post')
+              input(type='text', name='name', placeholder='Your Name')
+              input(type='text', name='email', placeholder='Email Address')
+              input(type='text', name='subject', placeholder='Subject')
+              textarea(name='message', placeholder='Your Message')
+              input.u-sbmt(type='button', value='Send Message')
+        .row
+          .dop.mg-top-big
+            .row-c-h
+              .col-md-4.box.u-tac.row-c-v
+                .row-c-v
+                  .u-icon.icon-phone
+                  h3 HAVE A QUESTION?
+                  a.u-not-a(href='#') +1 1234567890
+              .col-md-4.box.u-tac.row-c-v
+                .row-c-v
+                  .u-icon.icon-clock
+                  h3 Open Mon - Fri
+                  p 08:00am to 8:00pm
+              .col-md-4.box.u-tac.row-c-v
+                .row-c-v
+                  .u-icon.icon-chat
+                  h3 Drop us an email
+                  a.u-not-a(href='#') help@yourdomain.com
+    //- footer
+      .container
+        .row.row-h
+          .col-md-4
+            .copy © 2017 Umbokc
+          .col-md-4
+          .col-md-4
+            .social
+              a.u-not-a.fa.fa-facebook(href='#')
+              a.u-not-a.fa.fa-twitter(href='#')
+              a.u-not-a.fa.fa-linkedin(href='#')
+              a.u-not-a.fa.fa-google-plus(href='#')
+              a.u-not-a.fa.fa-instagram(href='#')
+    //- .umbokc-copy.hidden
+    //- .hidden
+    //- //if lt IE 9
+
+    script(src='libs/jquery/jquery-3.1.1.min.js')
+    link(rel='stylesheet', href='libs/unslider/css/unslider.css')
+    link(rel='stylesheet', href='libs/unslider/css/unslider-dots.css')
+    script(src='libs/unslider/js/unslider-min.js')
+    script(src='libs/headhesive/headhesive.min.js')
+    script(src='libs/u_emmet_attr/u-emmet.js')
+    script(src='js/common.js')

@@ -25,7 +25,6 @@ body
 	font-family: "UbuntuRegular", sans-serif
 	font-weight: normal
 	font-size: 14px
-	min-width: 320px
 	position: relative
 	line-height: 1.42857
 	-webkit-font-smoothing: antialised
@@ -64,13 +63,17 @@ section .title
 ///////////////////////
 header
 	color: #fff
-	height: 100%
-	max-height: 760px
+	// height: 100%
+	// max-height: 760px
+	padding-bottom: 20px
 	min-height: 650px
 	.content
-		position: absolute
-		z-index: 200
-		width: 100%
+		padding-left: 15px
+		padding-right: 15px
+		// position: absolute
+		// z-index: 200
+		// width: 100%
+
 	.desc
 		padding-top: 60px
 		font-family: "UbuntuBold"
@@ -183,8 +186,10 @@ section.wwd
 ///////////////////////
 section.oc
 	.slider
-		background-color: #f4f4f4
+		// background-color: #f4f4f4
 		height: 450px
+		img
+			width: 100%
 	.list
 		+box-shadow(rgba(0, 0, 0, 0.2) 0 0 4px 1px)
 		.vt-1, .vt-2, .vt-4, .vt-5
@@ -222,13 +227,15 @@ section.oc
 section.swp
 	background-color: #f7f7f7
 	.swp_wrap
+		.swp_wrap_item
+			padding: 8px
 		.swp_item
 			display: block
 			float: left
-			width: 360px
+			width: 100%
 			height: 250px
 			background-color: #FFF
-			margin: 8px
+			// margin: 8px
 			+box-shadow(rgba(0, 0, 0, 0.2) 0 0 4px 1px)
 			padding: 35px
 			h3,h4
@@ -301,9 +308,6 @@ section.wof
 
 ///////////////////////
 section.ow
-	max-width: 1900px
-	margin: 0 auto
-	display: grid
 	.head
 		background-color: #f8f9fb
 		margin-bottom: 0
@@ -325,17 +329,18 @@ section.ow
 					text-decoration: none
 	.content
 		.ow-box
-			height: 250px
+			height: 200px
 			display: inline-block
 			transition: transform 0.8s ease
 			padding: 0
 			margin: 0
 			position: relative
+			background-color: #252830
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center center;
 			img
-				position: absolute
-				top: 0
-				left: 0
-				z-index: -1
+				display: none
 			.desc
 				opacity: 0
 				position: absolute
@@ -371,7 +376,6 @@ section.ow
 				text-decoration: none
 			&:hover .desc, &:hover .tech li
 				opacity: 1
-
 
 ///////////////////////
 section.ot
