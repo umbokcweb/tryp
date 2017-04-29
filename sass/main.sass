@@ -124,11 +124,24 @@ header
 			color: #19bc9b
 
 ///////////////////////
+.pseudo_nav_head
+	height: 60px
+	width: 100%
+	display: none
 nav.head
+	// position: fixed
+	background: #fff
+	top: 0
+	left: 0
+	width: 100%
+	z-index: 10
 	height: 60px
 	+box-shadow(rgba(0, 0, 0, 0.2) 0 3px 20px 0px)
 	.logo a
 		line-height: 60px
+	.wrap_ul
+		display: block
+		z-index: 1
 	ul
 		li 
 			// display: inline-block
@@ -146,6 +159,7 @@ nav.head
 	.social
 		float: right
 		a
+			cursor: pointer
 			padding: 17px 5px
 			&:hover, &:focus
 				text-decoration: none
@@ -156,18 +170,37 @@ nav.head
 		.fa-twitter
 			color: #00A6DB
 		.other
-			padding: 24px 5px
+			padding: 8px 0px
 			float: right
-			.fa 
-				font-size: 12px
-				padding-left: 2px
-				color: #989996
-
+			.btn-group.open .dropdown-toggle
+				box-shadow: none
+			a
+				.fa 
+					font-size: 9px
+					padding-left: 2px
+					color: #989996
+			ul.dropdown-menu
+				right: 0
+				left: auto
+				li 
+					font-size: 20px
+					text-align: center
+					a
+						padding: 0
+						line-height: 30px
+						padding-left: 5px
+						padding-right: 5px
+						font-size: 25px
+	.menu-toogle
+		display: none
+		
 ///////////////////////
 section.wwd
 	border-bottom: 1px solid #dddddd
 	.u-wwd-thee
-		padding-bottom: 80px
+		padding-bottom: 40px
+		>div
+			padding-bottom: 40px
 		.box 
 			p 
 				width: 90%
@@ -269,6 +302,8 @@ section.swp
 
 ///////////////////////
 section.wof
+	.title
+		margin-bottom: 40px
 	.wof_buttons
 		a.btn
 			+border-radius(3px 3px 0 0)
@@ -290,8 +325,11 @@ section.wof
 				text-decoration: none
 	
 	.content
-		margin: 60px 0
-		.right
+		margin: 10px 0 30px
+		// display: none
+		.right,.left
+			padding-bottom: 30px
+			text-align: right
 			.row-c-v
 				align-items: flex-start;
 			h3
@@ -308,11 +346,17 @@ section.wof
 
 ///////////////////////
 section.ow
-	.head
+	padding-bottom: 60px
+	.title
 		background-color: #f8f9fb
 		margin-bottom: 0
-		padding-bottom: 30px
+	.head
+		background-color: #f8f9fb
+		padding-top: 10px
+		padding-bottom: 20px
+		width: 100%
 		.ow_buttons
+			padding-bottom: 40px
 			a.btn
 				padding: 12px 20px
 				background-color: $ugreen
@@ -320,25 +364,29 @@ section.ow
 				font-size: 18px
 				margin-left: 2px
 				position: relative
-				&.active
+				&.active,
+				&.active:hover
 					background-color: #000
 				&:hover
-					top: 1.5px
 					text-decoration: none
+					background-color: #1fd6b2
 				&:focus
 					text-decoration: none
-	.content
-		.ow-box
-			height: 200px
-			display: inline-block
-			transition: transform 0.8s ease
-			padding: 0
-			margin: 0
-			position: relative
+
+	.portfolio_wrapper
+		margin: 0
+		width: 100%
+		.ow-item
+			cursor: pointer
+			min-height: 200px
+			// width: 25%
+			// display: inline-block
+			transition: all 0.8s ease
 			background-color: #252830
 			background-size: cover;
 			background-repeat: no-repeat;
 			background-position: center center;
+			z-index: 1
 			img
 				display: none
 			.desc
@@ -350,7 +398,7 @@ section.ow
 				background-color: #252830
 				align-items: flex-start
 				padding: 0 15px
-				transition: opacity 0.8s ease
+				transition: transform 0.8s ease
 				p
 					font-size: 17px
 					color: #fff
@@ -368,49 +416,50 @@ section.ow
 						display: inline-block
 						background-color: #f2ede8
 						+border-radius(3px)
+						z-index: 2
 
 			&:hover
-				+transform(translatey(-60px))
-				text-decoration: none
-			&:focus
-				text-decoration: none
-			&:hover .desc, &:hover .tech li
+				background-position: center -60px
+			&:hover .desc
+				+transform(translateY(-60px))
+				opacity: 1
+			&:hover .tech li
 				opacity: 1
 
 ///////////////////////
-section.ot
-	clear: both;
-	.pers
-		img
-			padding-top: 10px
-		.name
-			padding-top: 20px
-			font-size: 27px
-			color: $ugrey
-		.spec
-			padding-top: 5px
-			font-size: 19px
-			color: #939598
-		.social
-			padding-top: 10px
-			padding-bottom: 15px
-			a 
-				font-size: 24px
-				padding: 0 5px
-				&.fa-facebook
-					color: #627aad
-				&.fa-twitter
-					color: #33bdf1
-				&.fa-linkedin
-					color: #3395c5
-				&:hover
-					text-decoration: none
-				&:focus
-					text-decoration: none
-		transition: transform 0.4s cubic-bezier(0.4, 0, 1, 1)
-		&:hover
-			+box-shadow(rgba(0, 0, 0, 0.2) 2px 0px 20px 4px)
-			+transform(scale(1.02))
+	// section.ot
+	// 	clear: both;
+	// 	.pers
+	// 		img
+	// 			padding-top: 10px
+	// 		.name
+	// 			padding-top: 20px
+	// 			font-size: 27px
+	// 			color: $ugrey
+	// 		.spec
+	// 			padding-top: 5px
+	// 			font-size: 19px
+	// 			color: #939598
+	// 		.social
+	// 			padding-top: 10px
+	// 			padding-bottom: 15px
+	// 			a 
+	// 				font-size: 24px
+	// 				padding: 0 5px
+	// 				&.fa-facebook
+	// 					color: #627aad
+	// 				&.fa-twitter
+	// 					color: #33bdf1
+	// 				&.fa-linkedin
+	// 					color: #3395c5
+	// 				&:hover
+	// 					text-decoration: none
+	// 				&:focus
+	// 					text-decoration: none
+	// 		transition: box-shadow 0.3s 
+	// 		&:hover
+	// 			+box-shadow(rgba(0, 0, 0, 0.2) 2px 0px 20px 4px)
+	// 			// +transform(scale(1.02))
 
 ///////////////////////
 section.nf
@@ -418,7 +467,7 @@ section.nf
 	padding-top: 80px
 	padding-bottom: 40px
 	img
-		max-width: 500px;
+		width: 100%
 	.right
 		padding-left: 80px
 	.title2
@@ -442,7 +491,8 @@ section.nf
 		padding-top: 55px
 		ul
 			float: left
-			padding-right: 100px
+			&.fl_r
+				float: right
 			li 
 				font-size: 16px
 				color: #8d7a7a
@@ -466,6 +516,12 @@ section.nf
 		.d_active
 			color: #afb0b3
 			padding-left: 20px
+			&:hover
+				background: transparent
+				text-decoration: underline
+			&:active
+				box-shadow: none
+				background: transparent
 
 ///////////////////////
 section.statistics
@@ -529,7 +585,12 @@ section.subscribe
 section.sybd
 	color: $ugrey
 	line-height: 57px
+	> * 
+		cursor: default
 	.box
+		margin-left: 5px
+		margin-right: 5px
+		margin-bottom: 20px
 		width: 320px
 		+box-shadow(rgba(0, 0, 0, 0.2) 2px 0px 20px 4px)
 		// margin: 0 15px
@@ -544,6 +605,8 @@ section.sybd
 			+border-radius(50%)
 			height: 125px
 			width: 125px
+			&:hover
+				border-style: solid
 		.month
 			color: #939598
 			font-size: 16px
@@ -563,8 +626,7 @@ section.sybd
 				margin-left: 2px
 				transition: all .1s ease-in-out 
 				&:hover
-					padding: 18px 40px
-					font-size: 19px	
+					+transform(scale(1.1))
 					text-decoration: none
 				&:focus
 					text-decoration: none
@@ -588,9 +650,12 @@ section.sybd
 			.trial
 				color: #f8f9fb
 	.help
+		line-height: 18px;
 		a 
 			color: $ugreen
-
+	.backup .active
+		margin: 0 auto
+		margin-bottom: 20px
 ///////////////////////
 section.sh
 	background-color: #f8f9fb
@@ -606,7 +671,7 @@ section.sh
 			&[name="subject"]
 				margin-bottom: 25px
 		input, textarea
-			padding-left: 10px
+			padding-left: 15px
 			border: 1px solid #cccccc
 			outline: 0
 			width: 100%
@@ -682,11 +747,11 @@ footer
 	width: 100%
 	background: white
 	transform: translateY(-100%)
-	transition: 0.5s
+	transition: .3s
 	z-index: 1000
-	display: none
+	visibility: hidden
 .headhesive--stick
-	display: block
+	visibility: visible
 	transform: translateY(0)
 
 ///////////////////////
@@ -694,7 +759,7 @@ footer
 	border-right: none
 	border-left: none
 	position: relative
-	background-color: #7a7a7a
+	background-color: transparent
 	.no-video .video-container video,
 	.touch .video-container video
 		display: none
@@ -704,7 +769,7 @@ footer
 		display: block !important
 
 	.video-container
-		position: relative
+		position: absolute
 		bottom: 0%	
 		left: 0%
 		height: 100%

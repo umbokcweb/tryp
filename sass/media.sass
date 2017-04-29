@@ -3,8 +3,6 @@
 /* Large Devices, Wide Screens */
 // @media only screen and (max-width : 1200px)
 
-
-
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
 	section .title
@@ -16,7 +14,6 @@
 		h2
 			margin: 0
 			font-size: 55px
-
 	header h1
 		font-size: 34pt
 	header .u-play
@@ -27,17 +24,22 @@
 		ul
 			li 
 				a 
-				 padding-left: 10px
-				 padding-right: 10px
+					padding-left: 10px
+					padding-right: 10px
 	nav.head .social .fa
 		font-size: 22px
 	nav.head .social .other .fa
-		font-size: 10px
+		font-size: 9px
 	section.wwd .u-wwd-thee .box h3
 		font-size: 25px
 	section.wwd .u-wwd-thee .box p
 
 		font-size: 15px
+	section.wof .content
+		display: block
+	section.nf .right
+		padding-left: 15px
+
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
 	header 
@@ -49,6 +51,101 @@
 			width: 360px
 			margin-bottom: 8px
 			border: none
+	section.wwd .u-wwd-thee
+		display: block
+	section.wwd .u-wwd-thee .box p
+		width: 60%
+	section.wwd .u-wwd-thee .box h3
+		margin-top: 20px
+	section.swp 
+		.swp_wrap
+			.swp_item
+				h3,h4
+					font-size: 26px
+				ul li
+					font-size: 14px	
+		nav
+	nav.head
+		z-index: 100
+		.wrapper_head
+			position: relative
+		.wrap_social
+			display: none
+		.wrap_ul
+			width: 100%
+			z-index: 10
+			display: none
+			background: #fff
+			padding: 0
+			border-top: 1px solid #EFEDED
+			border-bottom: 1px solid #BFBDBD
+			ul li
+				float: none
+				a
+					line-height: 50px
+					width: 100%	
+					display: block
+					padding: 0
+					text-align: center
+					transition: all .1s ease
+					&:hover
+						background: #DBDADA
+						color: #000	
+		.menu-toogle
+			display: block
+			position: absolute
+			top: 0
+			right: 0
+			padding: 0 15px
+			font-size: 30px
+			line-height: 60px
+			cursor: pointer
+			color: #a69999
+	section.ow .head 
+		padding-bottom: 0
+		.ow_buttons a.btn
+			font-size: 16px
+			padding: 8px 15px
+			margin-top: 2px;
+	section.nf 
+		padding-top: 0
+		.list ul
+			padding-right: 60px
+			&.fl_r
+				float: left
+		.nf_buttons
+			padding-top: 20px
+	section.statistics
+		padding-top: 60px
+		padding-bottom: 60px
+		.ttl
+			font-size: 25px
+		.u-icon
+			font-size: 45px
+			margin-bottom: 5px
+		.price
+			font-size: 43px
+			line-height: 50px
+		.desc
+			line-height: 45px
+			font-size: 16px
+	section.sh
+		.dop
+			.wrapper_down
+				flex-direction: column
+				align-items: center
+				.box
+					margin-bottom: 20px
+					h3
+						margin: 0
+						padding: 5px 0
+					.u-icon
+						line-height: 57px
+@media only screen and (max-width : 500px)
+	section.wof .wof_buttons a.btn
+		padding: 10px 24px
+		font-size: 14px
+
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
 	header 
@@ -63,14 +160,81 @@
 			width: 100%
 		form input
 			width: 90%
+	section.swp .swp_wrap .swp_wrap_item
+		width: 90%
+		margin-left: 5%
+		margin-right: 5%
+	section.wof .content .right h3,
+	section.wof .content .left h3
+		padding-bottom: 0	
+		margin-top: 0
+	section.nf 
+		.list
+			padding-top: 10px
+			ul
+				padding-right: 30px
+	section.statistics
+		padding-bottom: 30px
+		.ttl
+			font-size: 20px
+			padding-left: 10px
+			padding-right: 10px
+		.desc
+			padding-bottom: 30px			
+	section.sybd
+		.wrapper
+			display: block
+			.box 
+				width: 100%
+				margin-left: 0
+				margin-right: 0
+				.price
+					font-size: 27px;
+					line-height: 100.5px
+					height: 115px;
+					width: 115px;
+				.month
+					line-height: 20px
+					margin-top: 10px
+				.sybd_buttons
+					margin: 5px
+	section.sh
+		background-color: #f8f9fb
+		form
+			input
+				&[name="name"], &[name="email"]
+					float: none
+					width: 100% !important
+					margin-bottom: 5px
+					margin-right: 0
+				&[name="subject"]
+					margin-bottom: 10px
+
+			textarea
+				margin-bottom: 10px
+	footer
+		padding-bottom: 20px
+		.row
+			display: block
+			.social
+				float: none
+				padding-top: 10px
+@media only screen and (max-width : 380px)
+	section.wof .wof_buttons a.btn
+		padding: 10px 17px
+		font-size: 12px
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
 	header .u-play
 		font-size: 70pt
-
-
-
+	section.swp .swp_wrap .swp_wrap_item
+		width: 100%
+		margin-left: 0
+		margin-right: 0
+	section.subscribe
+		padding-top: 45px
+		padding-bottom: 40px
 /*==========  Mobile First Method  ==========*/
 
 /* Custom, iPhone Retina */

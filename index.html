@@ -11,11 +11,19 @@
     <link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="libs/et-line/css/et-line.css">
+    <link rel="stylesheet" href="libs/owl/assets/owl.carousel.css">
+    <link rel="stylesheet" href="libs/hamburger/css-hamburgers.min.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/media.css">
   </head>
   <body>
+    <div class="hidden">
+      <div class="row-h-o-md"></div>
+      <div class="row-v-o-md"></div>
+      <div class="row-c-h-o-md"></div>
+      <div class="row-c-v-o-md"></div>
+    </div>
     <header class="homepage-hero-module">
       <div class="content">
         <div class="a">
@@ -37,30 +45,52 @@
             <input type="button" value="Subscribe »" class="u-sbmt">
           </form>
         </div>
-        <div class="help u-tac">* We don’t share your personal <br> info with anyone Check out our <a href="#" class="u-not-a">Policy</a> & for more information <a href="#" class="u-not-a">Contact Us</a>.</div>
+        <div class="help u-tac">* We don’t share your personal <br>	info with anyone Check out our <a href="#" class="u-not-a">Policy</a>	& for more information <a href="#" class="u-not-a">Contact Us</a>	.</div>
+      </div>
+      <div class="video-container">
+        <div class="filter"></div>
+        <video loop="" class="fillWidth u-bg-video">
+          <source src="videos/MP4/Aloha-Mundo.mp4" type="video/mp4">Your browser does not support the video tag. I suggest you upgrade your browser.
+          <source src="videos/WEBM/Aloha-Mundo.webm" type="video/webm">Your browser does not support the video tag. I suggest you upgrade your browser.
+        </video>
+        <div class="poster hidden"><img src="videos/Snapshots/Aloha-Mundo.jpg" alt=""></div>
       </div>
     </header>
+    <div class="pseudo_nav_head"></div>
     <nav class="head">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-1 col-sm-1">
-            <div class="logo"><a href="#" class="u-not-a"><img src="img/logo.png" alt="логотип"></a></div>
-          </div>
-          <div class="col-md-9 col-sm-9">
-            <ul>
-              <li><a href="services" class="u-not-a">SERVICES</a></li>
-              <li><a href="about" class="u-not-a">ABOUT</a></li>
-              <li><a href="portfolio" class="u-not-a">PORTFOLIO</a></li>
-              <li><a href="team" class="u-not-a">TEAM</a></li>
-              <li><a href="pricing" class="u-not-a">PRICING</a></li>
-              <li><a href="testimonial" class="u-not-a">TESTIMONIAL</a></li>
-            </ul>
-          </div>
-          <div class="col-md-2 col-sm-2">
-            <div class="social"><a href="#" class="fa fa-facebook u-not-a"></a><a href="#" class="fa fa-twitter u-not-a"></a><a href="#" class="other row-c-h u-not-a"><span class="row-c-h">
-                  <div class="fa fa-circle-o"></div>
-                  <div class="fa fa-circle-o"></div>
-                  <div class="fa fa-circle-o"></div></span></a></div>
+      <div class="wrapper_head">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-1 col-sm-1 wrap_logo">
+              <div class="logo"><a href="#" class="u-not-a"><img src="img/logo.png" alt="логотип"></a></div>
+            </div>
+            <div class="col-md-9 col-sm-9 wrap_ul">
+              <ul>
+                <li><a href="services" class="u-not-a">SERVICES</a></li>
+                <li><a href="about" class="u-not-a">ABOUT</a></li>
+                <li><a href="portfolio" class="u-not-a">PORTFOLIO</a></li>
+                <li><a href="pricing" class="u-not-a">PRICING</a></li>
+                <li><a href="testimonial" class="u-not-a">TESTIMONIAL</a></li>
+              </ul>
+            </div>
+            <div class="col-md-2 col-sm-2 wrap_social">
+              <div class="social"><a href="#" class="fa fa-facebook u-not-a"></a><a href="#" class="fa fa-twitter u-not-a"></a>
+                <div class="other row-c-h">
+                  <div class="btn-group"><a data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="row-c-h dropdown-toggle">
+                      <div class="fa fa-circle-o"></div>
+                      <div class="fa fa-circle-o"></div>
+                      <div class="fa fa-circle-o"></div></a>
+                    <ul class="dropdown-menu">
+                      <li><a class="fa fa-vk u-not-a"></a></li>
+                      <li><a class="fa fa-github u-not-a"></a></li>
+                      <li><a class="fa fa-google-plus u-not-a"></a></li>
+                      <li><a class="fa fa-linkedin u-not-a"></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="menu-toogle fa fa-navicon"></div>
           </div>
         </div>
       </div>
@@ -80,25 +110,25 @@
         </div>
       </div>
       <div class="container row-c-h u-wwd-thee">
-        <div class="col-md-4 box u-tac row-c-v">
+        <div class="col-md-4 col-xs-12 box u-tac row-c-v">
           <div class="row-c-v">
             <div class="u-icon icon-mobile"></div>
-            <h3 class="mg-top-big">Fully Responsive</h3>
-            <p class="mg-top-md">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+            <h3 class="mg-t-big">Fully Responsive</h3>
+            <p class="mg-t-md">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
           </div>
         </div>
-        <div class="col-md-4 box u-tac row-c-v">
+        <div class="col-md-4 col-xs-12 box u-tac row-c-v">
           <div class="row-c-v">
             <div class="u-icon icon-presentation"></div>
-            <h3 class="mg-top-big">Easy to Customize</h3>
-            <p class="mg-top-md">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+            <h3 class="mg-t-big">Easy to Customize</h3>
+            <p class="mg-t-md">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
           </div>
         </div>
-        <div class="col-md-4 box u-tac row-c-v">
+        <div class="col-md-4 col-xs-12 box u-tac row-c-v">
           <div class="row-c-v">
             <div class="u-icon icon-lightbulb"></div>
-            <h3 class="mg-top-big">Direct Support</h3>
-            <p class="mg-top-md">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+            <h3 class="mg-t-big">Direct Support</h3>
+            <p class="mg-t-md">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
           </div>
         </div>
       </div>
@@ -117,7 +147,7 @@
           </div>
         </div>
       </div>
-      <div class="container mg-bottom-big">
+      <div class="container mg-b-big">
         <div class="row">
           <div class="col-md-7 col-sm-12">
             <div class="slider u-img-awh-p">
@@ -131,7 +161,7 @@
             </div>
           </div>
           <div class="col-md-5 col-sm-12">
-            <div class="list mg-top-sm">
+            <div class="list mg-t-sm">
               <div class="box">
                 <div class="vt-1">LOREM MESSAGE</div>
                 <div class="vt-2">FIRST MESSAGE</div>
@@ -148,19 +178,475 @@
                 <div class="vt-5">THIRD MESSAGE</div>
               </div>
             </div>
-            <div class="end mg-top">
+            <div class="end mg-t">
               <p>Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque mattis, leo quam</p>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <script src="libs/jquery/jquery-3.1.1.min.js"></script>
+    <section id="services" class="swp">
+      <div class="container title">
+        <div class="row">
+          <div class="u-tac">
+            <div class="icon-tools u-title-icon"></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="u-tac">
+            <p>Choose your required service from here</p>
+            <h2>Services We  <span>Provide</span></h2>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row mg-b-big">
+          <div class="col-md-12">
+            <div class="swp_wrap row">
+              <div class="swp_wrap_item col-md-4 col-sm-6 col-xs-6">
+                <div class="swp_item">
+                  <h4>Web Desing</h4>
+                  <ul>
+                    <li>PSD TO HTML</li>
+                    <li>Adaptive Web Design</li>
+                    <li>Responsive Web Design</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="swp_wrap_item col-md-4 col-sm-6 col-xs-6">
+                <div class="swp_item u-tac">
+                  <h3>Web Development</h3>
+                  <div class="u-icon icon-mobile"></div>
+                </div>
+              </div>
+              <div class="swp_wrap_item col-md-4 col-sm-6 col-xs-6">
+                <div class="swp_item u-tac">
+                  <h3>Web Maintenance</h3>
+                  <div class="u-icon icon-tools"></div>
+                </div>
+              </div>
+              <div class="swp_wrap_item col-md-4 col-sm-6 col-xs-6">
+                <div class="swp_item">
+                  <h4>Web Desing</h4>
+                  <ul>
+                    <li>PSD TO HTML</li>
+                    <li>Adaptive Web Design</li>
+                    <li>Responsive Web Design</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="swp_wrap_item col-md-4 col-sm-6 col-xs-6">
+                <div class="swp_item u-tac">
+                  <h3>Web Development</h3>
+                  <div class="u-icon icon-lightbulb"></div>
+                </div>
+              </div>
+              <div class="swp_wrap_item col-md-4 col-sm-6 col-xs-6">
+                <div class="swp_item u-tac">
+                  <h3>Web Maintenance</h3>
+                  <div class="u-icon icon-video"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="about" class="wof">
+      <div class="container title">
+        <div class="row">
+          <div class="u-tac">
+            <div class="icon-genius u-title-icon"></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="u-tac">
+            <p>PRODUCT FEATURES</p>
+            <h2>What Our  <span>Features..</span></h2>
+          </div>
+        </div>
+      </div>
+      <div class="container wrapper_tabs">
+        <div class="row">
+          <div class="wof_buttons u-tac mg-b-big tabs"><a href="#" class="btn active u-not-a tab">Introdaction</a><a href="#" class="btn u-not-a tab">About</a><a href="#" class="btn u-not-a tab">Features</a></div>
+        </div>
+        <div class="row tab_content">
+          <div class="content row-h-o-md tab_item">
+            <div class="left mg-r-big col-md-7 col-sm-12 col-xs-12">
+              <iframe src="https://www.youtube.com/embed/epl7J1OeSmM" height="309" frameborder="0" allowfullscreen="" class="auto_w_to_h"></iframe>
+            </div>
+            <div class="right row-c-v col-md-5 col-sm-12 col-xs-12">
+              <div class="row-c-v u-tal">
+                <h3>Take a sneak peek at our videos, for once.</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores explicabo beatae omnis modi laboriosam? Totam quae, ab, vero tempora minus ipsam at dolores dolor, obcaecati deleniti provident pariatur ex modi aperiam. Quae, itaque.</p>
+              </div>
+            </div>
+          </div>
+          <div class="content row-h-o-md tab_item">
+            <div class="left row-c-v mg-r-big col-md-5 col-sm-12 col-xs-12">
+              <div class="row-c-v u-tal">
+                <h3>Take a sneak peek at our videos, for once.</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores explicabo beatae omnis modi laboriosam? Totam quae, ab, vero tempora minus ipsam at dolores dolor, obcaecati deleniti provident pariatur ex modi aperiam. Quae, itaque.</p>
+              </div>
+            </div>
+            <div class="right col-md-7 col-sm-12 col-xs-12">
+              <iframe src="https://www.youtube.com/embed/epl7J1OeSmM" width="555" height="309" frameborder="0" allowfullscreen="" class="auto_w_to_h"></iframe>
+            </div>
+          </div>
+          <div class="content row-h-o-md tab_item">
+            <div class="left mg-r-big col-md-7 col-sm-12 col-xs-12">
+              <iframe src="https://www.youtube.com/embed/epl7J1OeSmM" width="555" height="309" frameborder="0" allowfullscreen="" class="auto_w_to_h"></iframe>
+            </div>
+            <div class="right row-c-v col-md-5 col-sm-12 col-xs-12">
+              <div class="row-c-v u-tal">
+                <h3>Take a sneak peek at our videos, for once.</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores explicabo beatae omnis modi laboriosam? Totam quae, ab, vero tempora minus ipsam at dolores dolor, obcaecati deleniti provident pariatur ex modi aperiam. Quae, itaque.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="portfolio" class="ow c-12">
+      <div class="container">
+        <div class="title">
+          <div class="row">
+            <div class="u-tac">
+              <div class="icon-mobile u-title-icon"></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="u-tac">
+              <p>PorTFOLIO</p>
+              <h2>Our <span>Works</span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="head">
+          <div id="filters" class="ow_buttons u-tac"><a href="#" data-filter="*" class="u-not-a btn active">All</a><a href="#" data-filter=".design" class="u-not-a btn">Web Design</a><a href="#" data-filter=".dev" class="u-not-a btn">Web Development</a><a href="#" data-filter=".uncat" class="u-not-a btn">Uncategorized</a></div>
+        </div>
+      </div>
+      <div class="portfolio_wrapper">
+        <figure class="ow-item design u-img-ow-bg">
+          <div class="tech">
+            <ul>
+              <li>Bootstrap</li>
+              <li>Js</li>
+            </ul>
+          </div>
+          <div class="desc row-c-v">
+            <p>Infinite Landing Page <br> by <span>Naveen</span></p>
+          </div><img src="img/portfolio/1.jpg" alt="asd">
+        </figure>
+        <figure class="ow-item design u-img-ow-bg">
+          <div class="tech">
+            <ul>
+              <li>Bootstrap</li>
+              <li>Js</li>
+            </ul>
+          </div>
+          <div class="desc row-c-v">
+            <p>Infinite Landing Page <br> by <span>Naveen</span></p>
+          </div><img src="img/portfolio/2.jpg" alt="asd">
+        </figure>
+        <figure class="ow-item design u-img-ow-bg">
+          <div class="tech">
+            <ul>
+              <li>Bootstrap</li>
+              <li>Js </li>
+            </ul>
+          </div>
+          <div class="desc row-c-v">
+            <p>Infinite Landing Page <br> by <span>Naveen</span></p>
+          </div><img src="img/portfolio/3.jpg" alt="asd">
+        </figure>
+        <figure class="ow-item dev u-img-ow-bg">
+          <div class="tech">
+            <ul>
+              <li>Bootstrap</li>
+              <li>Js</li>
+            </ul>
+          </div>
+          <div class="desc row-c-v">
+            <p>Infinite Landing Page <br> by <span>Naveen</span></p>
+          </div><img src="img/portfolio/4.jpg" alt="asd">
+        </figure>
+        <figure class="ow-item dev u-img-ow-bg">
+          <div class="tech">
+            <ul>
+              <li>Bootstrap</li>
+              <li>Js</li>
+            </ul>
+          </div>
+          <div class="desc row-c-v">
+            <p>Infinite Landing Page <br> by <span>Naveen</span></p>
+          </div><img src="img/portfolio/5.jpg" alt="asd">
+        </figure>
+        <figure class="ow-item dev u-img-ow-bg">
+          <div class="tech">
+            <ul>
+              <li>Bootstrap</li>
+              <li>Js</li>
+            </ul>
+          </div>
+          <div class="desc row-c-v">
+            <p>Infinite Landing Page <br> by <span>Naveen</span></p>
+          </div><img src="img/portfolio/1.jpg" alt="asd">
+        </figure>
+        <figure class="ow-item uncat dev u-img-ow-bg">
+          <div class="tech">
+            <ul>
+              <li>Bootstrap</li>
+              <li>Js</li>
+            </ul>
+          </div>
+          <div class="desc row-c-v">
+            <p>Infinite Landing Page <br> by <span>Naveen</span></p>
+          </div><img src="img/portfolio/2.jpg" alt="asd">
+        </figure>
+        <figure class="ow-item uncat u-img-ow-bg">
+          <div class="tech">
+            <ul>
+              <li>Bootstrap</li>
+              <li>Js</li>
+            </ul>
+          </div>
+          <div class="desc row-c-v">
+            <p>Infinite Landing Page <br> by <span>Naveen</span></p>
+          </div><img src="img/portfolio/5.jpg" alt="asd">
+        </figure>
+      </div>
+    </section>
+    <section class="nf">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5 hidden-sm hidden-xs"><img src="img/three-blocks.png" alt="block"></div>
+          <div class="col-md-7 right">
+            <div class="title2">
+              <h2>NEW FEATURES</h2>
+              <h3>Some extra <span>Love</span> from us</h3>
+              <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor.</p>
+            </div>
+            <div class="list">
+              <ul>
+                <li class="fa fa-arrow-circle-o-right">Modern Design</li>
+                <li class="fa fa-arrow-circle-o-right">Fully Responsive</li>
+                <li class="fa fa-arrow-circle-o-right">Bootstrap Grid</li>
+                <li class="fa fa-arrow-circle-o-right">Mailchimp Supported</li>
+                <li class="fa fa-arrow-circle-o-right">Easy To Customize</li>
+              </ul>
+              <ul class="fl_r">
+                <li class="fa fa-arrow-circle-o-right">Powerful Options</li>
+                <li class="fa fa-arrow-circle-o-right">Fresh Colors</li>
+                <li class="fa fa-arrow-circle-o-right">Validated Code</li>
+                <li class="fa fa-arrow-circle-o-right">Ajax Supported Form</li>
+                <li class="fa fa-arrow-circle-o-right">Best Typography</li>
+              </ul>
+            </div>
+            <div class="nf_buttons"><a href="#" class="u-not-a btn active">Get Infinite Now</a><a href="#" class="u-not-a btn d_active">View More</a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="statistics">
+      <div class="container">
+        <div class="row">
+          <div class="u-tac">
+            <div class="ttl">70% People Belive Another Consumer's Opinion Posted Online</div>
+          </div>
+        </div>
+        <div class="row mg-t-big">
+          <div class="col-md-3 col-sm-3 col-xs-6 u-tac">
+            <div class="u-icon icon-facebook"></div>
+            <div class="price">5,000</div>
+            <div class="desc">Facebook Like</div>
+          </div>
+          <div class="col-md-3 col-sm-3 col-xs-6 u-tac">
+            <div class="u-icon icon-twitter"></div>
+            <div class="price">3,000</div>
+            <div class="desc">Twitter Follower</div>
+          </div>
+          <div class="col-md-3 col-sm-3 col-xs-6 u-tac">
+            <div class="u-icon icon-happy"></div>
+            <div class="price">900</div>
+            <div class="desc">Happy Clients</div>
+          </div>
+          <div class="col-md-3 col-sm-3 col-xs-6 u-tac">
+            <div class="u-icon icon-globe"></div>
+            <div class="price">7,000</div>
+            <div class="desc">Money Earned</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="subscribe">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7"></div>
+          <div class="col-md-5">
+            <h3>Subscribe </h3>
+            <form method="post" class="u-tac row-c-h">
+              <input type="text" name="email" placeholder="Email your Address"><a href="#" class="u-not-a u-sbmt fa fa-envelope"></a>
+            </form>
+            <p>Subscribe to our weekly newsletter, We promise you that we wont spam you. Asperiores totam molestias eaque sunt maiores delectus modi ut ab!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="pricing" class="sybd mg-b-big">
+      <div class="container title">
+        <div class="row">
+          <div class="u-tac">
+            <div class="icon-presentation u-title-icon"></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="u-tac">
+            <p>PRODUCT PACKAGES</p>
+            <h2>Select your <span>best deal !</span></h2>
+          </div>
+        </div>
+      </div>
+      <div class="backup container"></div>
+      <div class="container row-c-h wrapper">
+        <div class="col-md-4 box u-tac row-c-v">
+          <div class="row-c-v">
+            <h3 class="mg-t">Basic</h3>
+            <p class="price">$59</p>
+            <p class="month">Per Month</p>
+            <ul>
+              <li><span>Unlimited</span> Bandwidth</li>
+              <li><span>Unlimited</span> Space</li>
+              <li><span>One</span> Time Fees</li>
+              <li><span>24/7</span> Free Support</li>
+              <li><span>Cpanel</span> Access</li>
+            </ul>
+            <div class="sybd_buttons mg"><a href="#" class="u-not-a btn">Get Started</a></div>
+            <p class="trial mg-b">30 Day One User <br>Try Our Product Now</p>
+          </div>
+        </div>
+        <div class="col-md-4 box u-tac row-c-v active">
+          <div class="row-c-v">
+            <h3 class="mg-t">Premium</h3>
+            <p class="price">$99</p>
+            <p class="month">Per Month</p>
+            <ul>
+              <li><span>Unlimited</span> Bandwidth</li>
+              <li><span>Unlimited</span> Space</li>
+              <li><span>One</span> Time Fees</li>
+              <li><span>24/7</span> Free Support</li>
+              <li><span>Cpanel</span> Access</li>
+            </ul>
+            <div class="sybd_buttons mg"><a href="#" class="u-not-a btn">Get Started</a></div>
+            <p class="trial mg-b">30 Day One User <br>Try Our Product Now</p>
+          </div>
+        </div>
+        <div class="col-md-4 box u-tac row-c-v">
+          <div class="row-c-v">
+            <h3 class="mg-t">Ultimate</h3>
+            <p class="price">$149</p>
+            <p class="month">Per Month</p>
+            <ul>
+              <li><span>Unlimited</span> Bandwidth</li>
+              <li><span>Unlimited</span> Space</li>
+              <li><span>One</span> Time Fees</li>
+              <li><span>24/7</span> Free Support</li>
+              <li><span>Cpanel</span> Access</li>
+            </ul>
+            <div class="sybd_buttons mg"><a href="#" class="u-not-a btn">Get Started</a></div>
+            <p class="trial mg-b">30 Day One User <br>Try Our Product Now</p>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row u-tac">
+          <p class="help">Want to know more ? <a href="#" class="u-not-a">read article,</a> check <a href="#" class="u-not-a">FAQ</a>, or <a href="#" class="u-not-a">contact us</a>.</p>
+        </div>
+      </div>
+    </section>
+    <section id="testimonial" class="sh">
+      <div class="container title">
+        <div class="row">
+          <div class="u-tac">
+            <div class="icon-chat u-title-icon"></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="u-tac">
+            <p>contact us</p>
+            <h2>Say <span>Hello !</span></h2>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-offset-2 col-md-8">
+            <form method="post">
+              <input type="text" name="name" placeholder="Your Name">
+              <input type="text" name="email" placeholder="Email Address">
+              <input type="text" name="subject" placeholder="Subject">
+              <textarea name="message" placeholder="Your Message"></textarea>
+              <input type="button" value="Send Message" class="u-sbmt">
+            </form>
+          </div>
+        </div>
+        <div class="row">
+          <div class="dop mg-t-big">
+            <div class="row-c-h wrapper_down">
+              <div class="col-md-4 box u-tac row-c-v">
+                <div class="row-c-v">
+                  <div class="u-icon icon-phone"></div>
+                  <h3>HAVE A QUESTION?</h3><a href="#" class="u-not-a">+1 1234567890</a>
+                </div>
+              </div>
+              <div class="col-md-4 box u-tac row-c-v">
+                <div class="row-c-v">
+                  <div class="u-icon icon-clock"></div>
+                  <h3>Open Mon - Fri</h3>
+                  <p>08:00am to 8:00pm</p>
+                </div>
+              </div>
+              <div class="col-md-4 box u-tac row-c-v">
+                <div class="row-c-v">
+                  <div class="u-icon icon-chat"></div>
+                  <h3>Drop us an email</h3><a href="#" class="u-not-a">help@yourdomain.com</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="row row-h">
+          <div class="col-md-4 col-xs-12 u-tac-xs">
+            <div class="copy">© 2017 Umbokc</div>
+          </div>
+          <div class="col-md-4"></div>
+          <div class="col-md-4 col-xs-12 u-tac-xs">
+            <div class="social"><a href="#" class="u-not-a fa fa-facebook"></a><a href="#" class="u-not-a fa fa-twitter"></a><a href="#" class="u-not-a fa fa-linkedin"></a><a href="#" class="u-not-a fa fa-google-plus"></a><a href="#" class="u-not-a fa fa-instagram"></a></div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="umbokc-copy hidden"></div>
+    <div class="hidden"></div>
+    <!--if lt IE 9
+    <script src="libs/html5shiv/es5-shim.min.js"></script>
+    <script src="libs/html5shiv/html5shiv.min.js"></script>
+    <script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+    <script src="libs/respond/respond.min.js"></script>
+    
+    -->
+    <script src="libs/jquery/jquery-1.11.2.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="libs/headhesive/headhesive.min.js"></script>
+    <script src="libs/equalheight/jquery.equalheight.js"></script>
+    <script src="libs/isotope/jquery.isotope.js"></script>
+    <script src="libs/unslider/js/unslider-min.js"></script>
     <link rel="stylesheet" href="libs/unslider/css/unslider.css">
     <link rel="stylesheet" href="libs/unslider/css/unslider-dots.css">
-    <script src="libs/unslider/js/unslider-min.js"></script>
-    <script src="libs/headhesive/headhesive.min.js"></script>
-    <script src="libs/u_emmet_attr/u-emmet.js"></script>
     <script src="js/common.js"></script>
   </body>
 </html>
