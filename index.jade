@@ -10,10 +10,16 @@ html
 		link(rel='stylesheet', href='css/u-grid.css')
 		link(rel='stylesheet', href='libs/bootstrap/bootstrap.min.css')
 		link(rel='stylesheet', href='libs/font-awesome/css/font-awesome.min.css')
-		link(rel='stylesheet', href='libs/et-line/css/et-line.css')
 		link(rel='stylesheet', href='libs/owl/assets/owl.carousel.css')
+		link(rel='stylesheet', href='libs/et-line/css/et-line.css')
 		link(rel='stylesheet', href='libs/hamburger/css-hamburgers.min.css')
+		link(rel='stylesheet', href='libs/magnific/magnific-popup.css')
+		link(rel='stylesheet', href='libs/unslider/css/unslider.css')
+		link(rel='stylesheet', href='libs/unslider/css/unslider-dots.css')
+
 		link(rel='stylesheet', href='css/fonts.css')
+		//- link(rel='stylesheet', href='css/main.min.css')
+		//- link(rel='stylesheet', href='css/media.min.css')
 		link(rel='stylesheet', href='css/main.css')
 		link(rel='stylesheet', href='css/media.css')
 	body
@@ -46,13 +52,11 @@ html
 					a.u-not-a(href='#') Contact Us
 					|	.
 			.video-container
-				video.fillWidth.u-bg-video(loop='')
+				video.fillWidth.u-bg-video(loop='').u-img-ow-bg
 					source(src='videos/MP4/Aloha-Mundo.mp4', type='video/mp4')
 					source(src='videos/WEBM/Aloha-Mundo.webm', type='video/webm')
 					| Your browser does not support the video tag. I suggest you upgrade your browser.
-				//- .poster.hidden.u-img-ow-bg
 					img(src='videos/Snapshots/Aloha-Mundo.jpg', alt='')
-
 		.pseudo_nav_head
 		nav.head
 			.wrapper_head
@@ -599,7 +603,9 @@ html
 							input(type='text', name='email', placeholder='Email Address')
 							input(type='text', name='subject', placeholder='Subject')
 							textarea(name='message', placeholder='Your Message')
-							input.u-sbmt(type='button', value='Send Message')
+							a.u-sbmt.popup_c(href='#thanks') Send Message
+							//- input.u-sbmt.popup_c(type='button', value='Send Message' href='#thanks')
+
 				.row
 					.dop.mg-t-big
 						.row-c-h.wrapper_down
@@ -631,24 +637,29 @@ html
 							a.u-not-a.fa.fa-linkedin(href='#')
 							a.u-not-a.fa.fa-google-plus(href='#')
 							a.u-not-a.fa.fa-instagram(href='#')
+
 		.umbokc-copy.hidden
 		.hidden
-		//if lt IE 9
-			<script src="libs/html5shiv/es5-shim.min.js"></script>
-			<script src="libs/html5shiv/html5shiv.min.js"></script>
-			<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
-			<script src="libs/respond/respond.min.js"></script>
+			#thanks
+				p.u-tac.
+					Спасибо за заявку!
+
+		<!--[if lt IE 9]>
+		<script src="libs/html5shiv/es5-shim.min.js"></script>
+		<script src="libs/html5shiv/html5shiv.min.js"></script>
+		<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+		<script src="libs/respond/respond.min.js"></script>
+		<![endif]-->
 
 		script(src='libs/jquery/jquery-1.11.2.min.js')
-		//- script(src='libs/jquery/jquery-3.1.1.min.js')
-		script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js' integrity='sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa' crossorigin='anonymous')
+		// <script src="libs/jquery/jquery-3.1.1.min.js"></script> 
+
+		script(src='libs/bootstrap/bootstrap.min.js')
 		script(src='libs/headhesive/headhesive.min.js')
-		script(src='libs/equalheight/jquery.equalheight.js')
-		//- script(src='libs/isotope/isotope.pkgd.min.js')
 		script(src='libs/isotope/jquery.isotope.js')
-			
+		script(src='libs/magnific/jquery.magnific-popup.min.js')
 		script(src='libs/unslider/js/unslider-min.js')
-		link(rel='stylesheet', href='libs/unslider/css/unslider.css')
-		link(rel='stylesheet', href='libs/unslider/css/unslider-dots.css')
+
 		
+		//- script(src='js/common.min.js')
 		script(src='js/common.js')

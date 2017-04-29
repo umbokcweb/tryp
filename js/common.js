@@ -11,6 +11,7 @@ $(document).ready(function() {
 ////Аякс отправка форм
 	//Документация: http://api.jquery.com/jquery.ajax/
 	$("#form").submit(function(e) {
+		var ths = $(this);
 		e.preventDefault;
 		$.ajax({
 			type: "POST",
@@ -20,6 +21,7 @@ $(document).ready(function() {
 			alert("Спасибо за заявку!");
 			setTimeout(function() {
 				$.fancybox.close();
+				ths.trigger("reset");
 			}, 1000);
 		});
 	});
@@ -29,6 +31,8 @@ $(document).ready(function() {
 	var menu_nav = document.getElementsByTagName('nav')[0];
 	var menu_nav_offsetTop = menu_nav.offsetTop;
 	var portfolio_wrapper = $('.portfolio_wrapper');
+
+	$('.popup_c').magnificPopup();
 
 	window.onresize = function(event) {
 		onScrollFixMenu();
@@ -132,10 +136,6 @@ $(document).ready(function() {
 		}
 	}
 
-//// equal height
-	// var eqElement = ".tab_item"
-	// $(window).load(function(){equalheight(eqElement);}).resize(function(){equalheight(eqElement);});
-
 //// Отмена нажатия на ссылку
 	$('a.u-not-a').click(function(e){ e.preventDefault(); return false;});
 
@@ -190,7 +190,6 @@ $(document).ready(function() {
 	}
 
 //// video bg
-
 
 	// scaleBannerVideoSize('.video-container video');
 	window.onresize =  function() {

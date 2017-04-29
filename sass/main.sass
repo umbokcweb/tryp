@@ -682,6 +682,7 @@ section.sh
 			margin-bottom: 50px
 
 		.u-sbmt
+			padding: 15px 40px
 			font-family: "UbuntuLight"
 			background-color: $ugreen
 			color: #fff
@@ -739,6 +740,7 @@ footer
 				color: #486e8d
 			&:hover, &:focus
 				text-decoration: none
+
 ///////////////////////
 .headhesive
 	padding-top: 0px
@@ -778,15 +780,10 @@ footer
 		width: auto;
 		height: auto;
 		overflow: hidden
-		background: transparent
-		.poster 
-			width: 100%
-			bottom: 0
-			position: absolute
-			img
-				display: none
+		img
+			display: none
 		video
-			background-color: #7a7a7a
+			background: transparent
 			position: absolute
 			z-index: 0
 			top: 0
@@ -795,3 +792,15 @@ footer
 			min-height: 100%;
 			width: auto;
 			height: auto;
+
+///////////////////////
+#thanks
+	width: 320px
+	height: 150px
+	background: #fff
+	margin: 0 auto
+	+border-radius(5px)
+	position: relative
+	p
+		line-height: 150px
+		font-size: 18px

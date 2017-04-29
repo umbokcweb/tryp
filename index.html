@@ -10,9 +10,12 @@
     <link rel="stylesheet" href="css/u-grid.css">
     <link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="libs/et-line/css/et-line.css">
     <link rel="stylesheet" href="libs/owl/assets/owl.carousel.css">
+    <link rel="stylesheet" href="libs/et-line/css/et-line.css">
     <link rel="stylesheet" href="libs/hamburger/css-hamburgers.min.css">
+    <link rel="stylesheet" href="libs/magnific/magnific-popup.css">
+    <link rel="stylesheet" href="libs/unslider/css/unslider.css">
+    <link rel="stylesheet" href="libs/unslider/css/unslider-dots.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/media.css">
@@ -48,9 +51,9 @@
         <div class="help u-tac">* We don’t share your personal <br>	info with anyone Check out our <a href="#" class="u-not-a">Policy</a>	& for more information <a href="#" class="u-not-a">Contact Us</a>	.</div>
       </div>
       <div class="video-container">
-        <video loop="" class="fillWidth u-bg-video">
+        <video loop="" class="fillWidth u-bg-video u-img-ow-bg">
           <source src="videos/MP4/Aloha-Mundo.mp4" type="video/mp4">
-          <source src="videos/WEBM/Aloha-Mundo.webm" type="video/webm">Your browser does not support the video tag. I suggest you upgrade your browser.
+          <source src="videos/WEBM/Aloha-Mundo.webm" type="video/webm">Your browser does not support the video tag. I suggest you upgrade your browser.<img src="videos/Snapshots/Aloha-Mundo.jpg" alt="">
         </video>
       </div>
     </header>
@@ -583,8 +586,7 @@
               <input type="text" name="name" placeholder="Your Name">
               <input type="text" name="email" placeholder="Email Address">
               <input type="text" name="subject" placeholder="Subject">
-              <textarea name="message" placeholder="Your Message"></textarea>
-              <input type="button" value="Send Message" class="u-sbmt">
+              <textarea name="message" placeholder="Your Message"></textarea><a href="#thanks" class="u-sbmt popup_c">Send Message</a>
             </form>
           </div>
         </div>
@@ -629,22 +631,26 @@
       </div>
     </footer>
     <div class="umbokc-copy hidden"></div>
-    <div class="hidden"></div>
-    <!--if lt IE 9
+    <div class="hidden">
+      <div id="thanks">
+        <p class="u-tac">
+          Спасибо за заявку!
+          
+        </p>
+      </div>
+    </div><!--[if lt IE 9]>
     <script src="libs/html5shiv/es5-shim.min.js"></script>
     <script src="libs/html5shiv/html5shiv.min.js"></script>
     <script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
     <script src="libs/respond/respond.min.js"></script>
-    
-    -->
+    <![endif]-->
     <script src="libs/jquery/jquery-1.11.2.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- <script src="libs/jquery/jquery-3.1.1.min.js"></script> -->
+    <script src="libs/bootstrap/bootstrap.min.js"></script>
     <script src="libs/headhesive/headhesive.min.js"></script>
-    <script src="libs/equalheight/jquery.equalheight.js"></script>
     <script src="libs/isotope/jquery.isotope.js"></script>
+    <script src="libs/magnific/jquery.magnific-popup.min.js"></script>
     <script src="libs/unslider/js/unslider-min.js"></script>
-    <link rel="stylesheet" href="libs/unslider/css/unslider.css">
-    <link rel="stylesheet" href="libs/unslider/css/unslider-dots.css">
     <script src="js/common.js"></script>
   </body>
 </html>
