@@ -1036,12 +1036,13 @@ footer .social a:hover, footer .social a:focus {
 
 .homepage-hero-module .video-container {
   position: absolute;
+  z-index: -20;
   bottom: 0%;
   left: 0%;
   height: 100%;
   width: 100%;
   overflow: hidden;
-  background: #000;
+  background: transparent;
 }
 
 .homepage-hero-module .video-container .poster img {
