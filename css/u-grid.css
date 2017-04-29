@@ -43,6 +43,27 @@ body > *{ box-sizing: border-box;}
 .mg-r-big {margin-right: 40px}
 .mg-0 {margin: 0}
 
+.p {padding: 20px}
+
+.p-big {padding: 40px}
+
+.p-v {padding: 20px 0}
+.p-h {padding: 0 20px}
+
+.p-v-big {padding: 40px 0}
+.p-h-big {padding: 0 40px}
+
+.p-t {padding-top: 20px}
+.p-b {padding-bottom: 20px}
+.p-l {padding-left: 20px}
+.p-r {padding-right: 20px}
+
+.p-t-big {padding-top: 40px}
+.p-b-big {padding-bottom: 40px}
+.p-l-big {padding-left: 40px}
+.p-r-big {padding-right: 40px}
+.p-0 {padding: 0}
+
 .u-tac{text-align: center}
 .u-tal{text-align: left}
 

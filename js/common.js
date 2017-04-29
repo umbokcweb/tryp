@@ -42,7 +42,7 @@ $(document).ready(function() {
 		priceToBackup();
 	};
 	window.onscroll = function(event) {
-		// onScrollActivateMenu();
+		onScrollActivateMenu();
 		onScrollFixMenu();
 	};
 	
@@ -181,7 +181,7 @@ $(document).ready(function() {
 		$(menu_elements).each(function(){
 			var hash = $(this).attr("href");
 			var target = document.getElementById(hash);
-			if (target.offsetTop <= scroll_top && (target.offsetTop + target.offsetHeight) > scroll_top) {
+			if (target.offsetTop <= scroll_top && (target.offsetTop + target.offsetHeight) >= scroll_top) {
 				$(this).addClass("active");
 			} else {
 				$(this).removeClass("active");
