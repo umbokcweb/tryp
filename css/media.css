@@ -1,5 +1,12 @@
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+  .homepage-hero-module .video-container video {
+    top: -10%;
+    left: -60%;
+  }
+}
+
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
   section .title {
@@ -45,6 +52,9 @@
   }
   section.nf .right {
     padding-left: 15px;
+  }
+  .homepage-hero-module .video-container video {
+    left: -80%;
   }
 }
 
@@ -173,6 +183,10 @@
   section.sh .dop .wrapper_down .box .u-icon {
     line-height: 57px;
   }
+  .homepage-hero-module .video-container video {
+    top: -20%;
+    left: -150%;
+  }
 }
 
 @media only screen and (max-width: 500px) {
@@ -273,12 +287,18 @@
     float: none;
     padding-top: 10px;
   }
+  .homepage-hero-module .video-container video {
+    left: -180%;
+  }
 }
 
 @media only screen and (max-width: 380px) {
   section.wof .wof_buttons a.btn {
     padding: 10px 17px;
     font-size: 12px;
+  }
+  .homepage-hero-module .video-container video {
+    left: -240%;
   }
 }
 
@@ -295,6 +315,10 @@
   section.subscribe {
     padding-top: 45px;
     padding-bottom: 40px;
+  }
+  .homepage-hero-module .video-container video {
+    top: -20%;
+    left: -280%;
   }
 }
 

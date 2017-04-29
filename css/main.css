@@ -1037,34 +1037,34 @@ footer .social a:hover, footer .social a:focus {
 .homepage-hero-module .video-container {
   position: absolute;
   z-index: -20;
-  bottom: 0%;
+  top: 0%;
   left: 0%;
-  height: 100%;
-  width: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
   overflow: hidden;
   background: transparent;
 }
 
-.homepage-hero-module .video-container .poster img {
+.homepage-hero-module .video-container .poster {
   width: 100%;
   bottom: 0;
   position: absolute;
 }
 
-.homepage-hero-module .video-container .filter {
-  z-index: 100;
-  position: absolute;
-  background: rgba(0, 0, 0, 0.4);
-  width: 100%;
+.homepage-hero-module .video-container .poster img {
+  display: none;
 }
 
 .homepage-hero-module .video-container video {
   background-color: #7a7a7a;
   position: absolute;
   z-index: 0;
-  bottom: 0;
-}
-
-.homepage-hero-module .video-container video.fillWidth {
-  width: 100%;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
 }
